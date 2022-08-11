@@ -1,0 +1,261 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+i {
+  font-size: 2rem;
+}
+
+.shade-border {
+  background: rgb(134,35,35);
+  background: radial-gradient(circle, rgba(134,35,35,1) 26%, rgba(168,20,20,0) 63%);
+    height: inherit;
+  width: 3px;
+}
+/* Test */
+.s9 {
+  max-width: 90%;
+}
+.s8 {
+  max-width: 80%;
+}
+.s0 {
+  max-width: 0%;
+}
+.skills{
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.skill-name{
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.skill-bar{
+  height: 14px;
+  background: #282828;
+  border-radius: 3px;
+}
+
+.skill-per{
+  height: 14px;
+  background: rgb(166,83,109);
+  background: linear-gradient(90deg, rgba(166,83,109,1) 1%, rgba(213,15,55,1) 99%);
+  border-radius: 3px;
+  position: relative;
+  animation: fillBars 2.5s 1;
+}
+
+.skill-per::before{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: #f1f1f1;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.skill-per::after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #f1f1f1;
+  top: -20px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+@keyframes fillBars{
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
+/* Skills Section */
+/* .container {
+  padding-left: 0px!important;
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {width: 90%; background-color: #04AA6D;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 65%; background-color: #f44336;}
+.php {width: 60%; background-color: #808080;} */
+/* end of w3s skill bar  */
+
+
+.bg-black {
+  background-color: black;
+  padding-right: 1%;
+}
+.test {
+  height: 250px;
+  width: auto;
+  background-color: black;
+}
+
+.bg-projects {
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(107,7,7,1) 33%, rgba(147,63,63,1) 78%);}
+/* .text-projects {
+  color: #903749;
+} */
+
+#Projects {
+  margin-top: 15%;
+}
+#contact {
+margin-top: 5%;
+
+}
+.btn-projects {
+  background-color: #820000;
+  font-size: 1.7rem;
+}
+.bgimg {
+  background-image: url(./Images/Home.jpg);
+  height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -99;
+
+}
+
+.opacity {
+    background-color: rgba(0,0,0,0.70);
+    height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.navigation {
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 10%;
+}
+
+.big {
+
+  margin-top: 25%;
+  margin-left: 5%;
+  width: auto;
+}
+.button {
+  margin-left: 15%;
+  margin-top: 3%;
+}
+
+
+.gold {
+  color: gold;
+}
+a {
+  text-decoration: none!important;
+}
+
+
+
+.learnmore {
+  border-style: double;
+  border-width: 4px;
+  font-size: 1rem;
+  padding: 1% 5% !important;
+}
+
+/* effects */
+
+.footer-icon:hover {
+  color: #df4759!important;
+  font-size: 3rem;
+  transition: 0.5s;
+
+}
+.learnmore:hover {
+  background-color: red;
+  color: white !important;
+  transition: 0.8s;
+}
+
+
+div a:hover {
+  letter-spacing: 1px;
+  font-weight: bold;
+  transition: 1s;
+}
+.navlist:after {
+    content: '';
+    position: relative;
+    display:flex;
+    background-color: red;
+    height: 3px!important;
+    opacity: 0;
+    margin-top: 5px;
+}
+
+.navlist:hover::after {
+  opacity: 1;
+  transition: 1s;
+  text-decoration: none;
+}
+
+.brandname {
+  font-size:1.1rem!important;
+}
+.brandname:hover{
+  letter-spacing: 5px;
+  transition:0.5s;
+}
+
+/* Media Query */
+@media (max-width: 768.98px){
+    h6{
+  font-size: 0.8rem!important;
+}
+}
+@media (max-width: 768.98px) {
+  .brandname:hover{
+    letter-spacing: 0.5px;
+    transition:0.5s;
+  }
+
+}
+
+@media (max-width: 626.98px) {
+    .big {
+      font-size: 3.5rem!important;
+      transition: 0.5s;
+    }
+}
+
+@media (max-width: 407.98px) {
+    .big {
+      font-size: 2.8rem!important;
+      transition: 0.5s;
+    }
+}
