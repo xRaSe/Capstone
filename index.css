@@ -9,7 +9,13 @@ html {
 i {
   font-size: 2rem;
 }
+body {
+  background-color: #181a1b!important;
+}
 
+.bg-darker {
+background-color: #181a1b
+}
 .shade-border {
   background: rgb(134,35,35);
   background: radial-gradient(circle, rgba(134,35,35,1) 26%, rgba(168,20,20,0) 63%);
