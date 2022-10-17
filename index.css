@@ -1,5 +1,5 @@
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -10,16 +10,20 @@ i {
   font-size: 2rem;
 }
 body {
-  background-color: #181a1b!important;
+  background-color: #181a1b !important;
 }
 
 .bg-darker {
-background-color: #181a1b
+  background-color: #181a1b;
 }
 .shade-border {
-  background: rgb(134,35,35);
-  background: radial-gradient(circle, rgba(134,35,35,1) 26%, rgba(168,20,20,0) 63%);
-    height: inherit;
+  background: rgb(134, 35, 35);
+  background: radial-gradient(
+    circle,
+    rgba(134, 35, 35, 1) 26%,
+    rgba(168, 20, 20, 0) 63%
+  );
+  height: inherit;
   width: 3px;
 }
 /* Test */
@@ -30,37 +34,41 @@ background-color: #181a1b
   max-width: 80%;
 }
 .s0 {
-  max-width: 0%;
+  max-width: 90%;
 }
-.skills{
+.skills {
   width: 100%;
   max-width: 600px;
   padding: 0 20px;
 }
 
-.skill-name{
+.skill-name {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 20px 0;
 }
 
-.skill-bar{
+.skill-bar {
   height: 14px;
   background: #282828;
   border-radius: 3px;
 }
 
-.skill-per{
+.skill-per {
   height: 14px;
-  background: rgb(166,83,109);
-  background: linear-gradient(90deg, rgba(166,83,109,1) 1%, rgba(213,15,55,1) 99%);
+  background: rgb(166, 83, 109);
+  background: linear-gradient(
+    90deg,
+    rgba(166, 83, 109, 1) 1%,
+    rgba(213, 15, 55, 1) 99%
+  );
   border-radius: 3px;
   position: relative;
   animation: fillBars 2.5s 1;
 }
 
-.skill-per::before{
+.skill-per::before {
   content: attr(per);
   position: absolute;
   padding: 4px 6px;
@@ -72,7 +80,7 @@ background-color: #181a1b
   transform: translateX(50%);
 }
 
-.skill-per::after{
+.skill-per::after {
   content: "";
   position: absolute;
   width: 10px;
@@ -84,11 +92,11 @@ background-color: #181a1b
   border-radius: 2px;
 }
 
-@keyframes fillBars{
-  from{
+@keyframes fillBars {
+  from {
     width: 0;
   }
-  to{
+  to {
     width: 100%;
   }
 }
@@ -112,7 +120,6 @@ background-color: #181a1b
 .php {width: 60%; background-color: #808080;} */
 /* end of w3s skill bar  */
 
-
 .bg-black {
   background-color: black;
   padding-right: 1%;
@@ -124,8 +131,14 @@ background-color: #181a1b
 }
 
 .bg-projects {
-  background: rgb(255,255,255);
-  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(107,7,7,1) 33%, rgba(147,63,63,1) 78%);}
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(107, 7, 7, 1) 33%,
+    rgba(147, 63, 63, 1) 78%
+  );
+}
 /* .text-projects {
   color: #903749;
 } */
@@ -134,8 +147,7 @@ background-color: #181a1b
   margin-top: 15%;
 }
 #contact {
-margin-top: 5%;
-
+  margin-top: 5%;
 }
 .btn-projects {
   background-color: #820000;
@@ -150,14 +162,13 @@ margin-top: 5%;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -99;
-
 }
 
 .opacity {
-    background-color: rgba(0,0,0,0.70);
-    height: 100vh;
-    min-width: 100%;
-    min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .navigation {
@@ -167,7 +178,6 @@ margin-top: 5%;
 }
 
 .big {
-
   margin-top: 25%;
   margin-left: 5%;
   width: auto;
@@ -177,15 +187,12 @@ margin-top: 5%;
   margin-top: 3%;
 }
 
-
 .gold {
   color: gold;
 }
 a {
-  text-decoration: none!important;
+  text-decoration: none !important;
 }
-
-
 
 .learnmore {
   border-style: double;
@@ -197,10 +204,9 @@ a {
 /* effects */
 
 .footer-icon:hover {
-  color: #df4759!important;
+  color: #df4759 !important;
   font-size: 3rem;
   transition: 0.5s;
-
 }
 .learnmore:hover {
   background-color: red;
@@ -208,20 +214,19 @@ a {
   transition: 0.8s;
 }
 
-
 div a:hover {
   letter-spacing: 1px;
   font-weight: bold;
   transition: 1s;
 }
 .navlist:after {
-    content: '';
-    position: relative;
-    display:flex;
-    background-color: red;
-    height: 3px!important;
-    opacity: 0;
-    margin-top: 5px;
+  content: "";
+  position: relative;
+  display: flex;
+  background-color: red;
+  height: 3px !important;
+  opacity: 0;
+  margin-top: 5px;
 }
 
 .navlist:hover::after {
@@ -231,37 +236,36 @@ div a:hover {
 }
 
 .brandname {
-  font-size:1.1rem!important;
+  font-size: 1.1rem !important;
 }
-.brandname:hover{
+.brandname:hover {
   letter-spacing: 5px;
-  transition:0.5s;
+  transition: 0.5s;
 }
 
 /* Media Query */
-@media (max-width: 768.98px){
-    h6{
-  font-size: 0.8rem!important;
-}
+@media (max-width: 768.98px) {
+  h6 {
+    font-size: 0.8rem !important;
+  }
 }
 @media (max-width: 768.98px) {
-  .brandname:hover{
+  .brandname:hover {
     letter-spacing: 0.5px;
-    transition:0.5s;
+    transition: 0.5s;
   }
-
 }
 
 @media (max-width: 626.98px) {
-    .big {
-      font-size: 3.5rem!important;
-      transition: 0.5s;
-    }
+  .big {
+    font-size: 3.5rem !important;
+    transition: 0.5s;
+  }
 }
 
 @media (max-width: 407.98px) {
-    .big {
-      font-size: 2.8rem!important;
-      transition: 0.5s;
-    }
+  .big {
+    font-size: 2.8rem !important;
+    transition: 0.5s;
+  }
 }
